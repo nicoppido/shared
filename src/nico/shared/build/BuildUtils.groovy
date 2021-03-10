@@ -1,5 +1,7 @@
 package nico.shared.build
 
+import org.yaml.snakeyaml.Yaml
+
 public class BuildUtils{
 
     protected String shContent;
@@ -15,7 +17,8 @@ public class BuildUtils{
 
     public void build(context){
         context.echo "Running: ${context.env.BUILD_ID} on ${context.env.JENKINS_URL}";
-        context.echo shContent;
+        Yaml yaml = new Yaml();
+        context.echo yaml.toString();
     }
 
 }
