@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-import net.test.build.BuildUtils;
+import nico.shared.build.BuildUtils;
 
 def call(context) {
     def build = new BuildUtils();
