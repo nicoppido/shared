@@ -1,6 +1,7 @@
 def call(){
     try {
         pipeline {
+            agent none
             stages {
                 stage('Build') {
                     steps{
