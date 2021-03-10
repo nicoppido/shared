@@ -1,4 +1,4 @@
-def call(def config){
+def call(){
     try {
         pipeline {
             stages {
