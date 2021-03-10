@@ -15,7 +15,7 @@ public class BuildUtils{
 
     public void build(context){
         context.echo "Running: ${context.env.BUILD_ID} on ${context.env.JENKINS_URL}";
-        context.sh shContent;
+        context.echo shContent;
     }
 
 }
